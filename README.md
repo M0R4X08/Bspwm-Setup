@@ -3,13 +3,14 @@
 Este script automatiza la instalación de **BSPWM** en Debian, diseñado para ofrecer un entorno ágil y optimizado para el desarrollo de software. Incluye herramientas preinstaladas como **VSCode** y **Obsidian**, así como una terminal **ZSH** con el tema **Powerlevel10k**. Utiliza **Kitty** como gestor de terminal y **Rofi** como lanzador de aplicaciones. Además, está pensado para maximizar la comodidad del usuario, incorporando atajos de teclado para controlar el brillo, indicadores de red, y gestores de **WiFi** y **Bluetooth**.
 
 ## Instalación
-
+> **📝 Nota:**
+> Ejecuta el script como usuario normal, ya que durante su ejecución se te solicitará la contraseña de administrador.
 ```bash
-   git clone https://github.com/M0R4X08/bspwm-setup.git
+git clone https://github.com/M0R4X08/Bspwm-Setup.git
 ```
 
 ```bash
-cd bspwm-setup
+cd Bspwm-Setup
 ```
 
 ```bash
@@ -19,9 +20,6 @@ chmod +x install.sh
 ```bash
 ./install.sh
 ```
-
-> **📝 Nota:**
-> Ejecuta el script como usuario normal, ya que durante su ejecución se te solicitará la contraseña de administrador.
 
 ## Setup
 
