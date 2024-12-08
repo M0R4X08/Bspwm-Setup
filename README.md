@@ -4,29 +4,41 @@ Este script automatiza la instalación de **BSPWM** en Debian, diseñado para of
 
 ## Instalación
 
-   ```bash
+```bash
    git clone https://github.com/M0R4X08/bspwm-setup.git
-   ```
- 
+```
+
 ```bash
 cd bspwm-setup
 ```
+
 ```bash
 chmod +x install.sh
 ```
+
 ```bash
 ./install.sh
 ```
-> **:memo: Nota:**
+
+> **📝 Nota:**
 > Ejecuta el script como usuario normal, ya que durante su ejecución se te solicitará la contraseña de administrador.
-> 
+
+## Setup
+
+![Setup](https://github.com/M0R4X08/bspwm-setup/raw/main/img/setup.png)
+
 ## Posibles Errores
+
 Si al hacer doble clic en el touchpad no se registra como clic, puedes solucionarlo de la siguiente manera:
+
 1. Busca o crea el siguiente archivo
+
 ```bash
 nano /etc/X11/xorg.conf.d/30-touchpad.conf
 ```
+
 2. Copia el siguiente texto en el archivo y reinicia el pc
+
 ```text
 Section "InputClass"
 Identifier "touchpad"
@@ -37,5 +49,7 @@ Driver "libinput"
   Option "ClickMethod" "clickfinger"
 EndSection
 ```
+
 ## Menciones
+
 Este entorno está basado en el setup de [S4vitar](https://github.com/s4vitar), cuyo trabajo sirvió como inspiración para la configuración.
